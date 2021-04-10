@@ -1,29 +1,32 @@
 {
-  "name": "js-tdd-course",
-  "version": "1.0.0",
-  "description": "Biblioteca do curso JS com TDD na prática",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GiovaniBoff/js-tdd-course.git"
-  },
-  "keywords": [
-    "js",
-    "tdd",
-    "library"
-  ],
-  "author": "Giovani Boff <giovanisouza15@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/GiovaniBoff/js-tdd-course/issues"
-  },
-  "homepage": "https://github.com/GiovaniBoff/js-tdd-course#readme",
-  "devDependencies": {
-    "eslint": "^7.24.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1"
-  }
+    "name": "js-tdd-course",
+    "version": "1.0.0",
+    "description": "Biblioteca do curso JS com TDD na prática",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint src/*.js",
+        "prepush": "npm run lint"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GiovaniBoff/js-tdd-course.git"
+    },
+    "keywords": [
+        "js",
+        "tdd",
+        "library"
+    ],
+    "author": "Giovani Boff <giovanisouza15@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/GiovaniBoff/js-tdd-course/issues"
+    },
+    "homepage": "https://github.com/GiovaniBoff/js-tdd-course#readme",
+    "devDependencies": {
+        "eslint": "^7.24.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "husky": "^6.0.0"
+    }
 }

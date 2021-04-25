@@ -4,7 +4,8 @@
     "description": "Biblioteca do curso JS com TDD na prática",
     "main": "index.js",
     "scripts": {
-        "test": "mocha tests/**/*.spec.js",
+        "test": "mocha tests/**/*.spec.js --require @babel/register",
+        "test:tdd": "mocha tests/**/*.spec.js --require @babel/register --watch",
         "lint": "eslint src/*.js",
         "prepush": "npm run lint"
     },

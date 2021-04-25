@@ -37,8 +37,13 @@ describe('Calc', () => {
     it('should return 4 when `sub(6,2)`', () => {
       expect(sub(6, 2)).to.be.equal(4)
     });
-    it('should return -4 when `sub(6,10)`',() => {
+    it('should return -4 when `sub(6,10)`', () => {
       expect(sub(6, 10)).to.be.equal(-4);
+    })
+  });
+  describe('Mult', () => {
+    it('should return 4 when `mult(2,2)`', () => {
+      expect(mult(2,2)).to.be.equal(4)
     })
   })
 });

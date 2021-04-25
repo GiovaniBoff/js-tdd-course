@@ -30,7 +30,15 @@ describe('Calc', () => {
 
   describe('Sum', () => {
     it('should return 4 when `sum(2,2)`', () => {
-      expect(calc.sum(2, 2)).to.be.equal(4);
+      expect(sum(2, 2)).to.be.equal(4);
     });
+  });
+  describe('Sub', () => {
+    it('should return 4 when `sub(6,2)`', () => {
+      expect(sub(6, 2)).to.be.equal(4)
+    });
+    it('should return -4 when `sub(6,10)`',() => {
+      expect(sub(6, 10)).to.be.equal(-4);
+    })
   })
 });

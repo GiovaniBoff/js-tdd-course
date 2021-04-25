@@ -16,4 +16,6 @@ const FizzBuzz = (num) => {
   return num;
 };
 
+const foo = () => 'foo';
+
 export default FizzBuzz;

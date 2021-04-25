@@ -4,7 +4,7 @@
     "description": "Biblioteca do curso JS com TDD na prática",
     "main": "index.js",
     "scripts": {
-       "prepare": "husky install",
+        "prepare": "npx husky install",
         "test": "mocha tests/**/*.spec.js --require @babel/register",
         "test:tdd": "mocha tests/**/*.spec.js --require @babel/register --watch",
         "test:coverage": "nyc npm run test",

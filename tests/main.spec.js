@@ -1,6 +1,7 @@
 /* eslint-disable */
 const { expect } = require('chai');
 const calc = require('../src/main');
+const {sum,sub,mult,div} = require('../src/main');
 
 describe('Calc', () => {
   // smoke tests
@@ -26,4 +27,10 @@ describe('Calc', () => {
       expect(calc.div).to.be.a('function');
     });
   });
+
+  describe('Sum', () => {
+    it('should return 4 when `sum(2,2)`', () => {
+      expect(calc.sum(2, 2)).to.be.equal(4);
+    });
+  })
 });

@@ -4,11 +4,12 @@
     "description": "Biblioteca do curso JS com TDD na prática",
     "main": "index.js",
     "scripts": {
+       "prepare": "husky install",
         "test": "mocha tests/**/*.spec.js --require @babel/register",
         "test:tdd": "mocha tests/**/*.spec.js --require @babel/register --watch",
         "test:coverage": "nyc npm run test",
         "lint": "eslint src/*.js",
-        "pre-push": "npm run lint && npm run test:coverage"
+        "prepush": "npm run prepare"
     },
     "nyc": {
         "functions": 80,

@@ -16,6 +16,7 @@ const FizzBuzz = (num) => {
   return num;
 };
 
+// eslint-disable-next-line no-unused-vars
 const foo = () => 'boo';
 
 export default FizzBuzz;

@@ -33,6 +33,7 @@ describe('Calc', () => {
       expect(sum(2, 2)).to.be.equal(4);
     });
   });
+
   describe('Sub', () => {
     it('should return 4 when `sub(6,2)`', () => {
       expect(sub(6, 2)).to.be.equal(4)
@@ -43,7 +44,17 @@ describe('Calc', () => {
   });
   describe('Mult', () => {
     it('should return 4 when `mult(2,2)`', () => {
-      expect(mult(2,2)).to.be.equal(4)
+      expect(mult(2, 2)).to.be.equal(4)
+    });
+  });
+
+  describe('Div', () => {
+    it('should return 2 `div(4,2)`', () => {
+      expect(div(4, 2)).to.be.equal(2);
+    })
+
+    it('should return `Não é possivel divisão por zero` when divide by 0',()=> {
+      expect(div(3, 0)).to.be.equal('Não é possivel divisão por zero!');
     })
   })
 });

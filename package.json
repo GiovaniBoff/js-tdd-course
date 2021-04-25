@@ -10,12 +10,17 @@
         "lint": "eslint src/*.js",
         "pre-push": "npm run lint && npm run test:coverage"
     },
-    "nyc":{
-      "functions":80,
-      "lines": 80,
-      "check-coverage":true,
-      "reporter":["text","html"],
-      "exclude":["tests/**"]
+    "nyc": {
+        "functions": 80,
+        "lines": 80,
+        "check-coverage": true,
+        "reporter": [
+            "text",
+            "html"
+        ],
+        "exclude": [
+            "tests/**"
+        ]
     },
     "repository": {
         "type": "git",

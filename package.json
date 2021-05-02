@@ -4,10 +4,26 @@
     "description": "Biblioteca do curso JS com TDD na prática",
     "main": "index.js",
     "scripts": {
+        "prepare": "npx husky install",
+        "test": "mocha tests/**/*.spec.js --require @babel/register",
+        "test:tdd": "mocha tests/**/*.spec.js --require @babel/register --watch",
+        "test:coverage": "nyc npm run test",
         "test": "mocha tests/**/*.spec.js --require @babel/register",
         "test:tdd": "mocha tests/**/*.spec.js --require @babel/register --watch",
         "lint": "eslint src/*.js",
-        "prepush": "npm run lint"
+        "prepush": "npm run prepare"
+    },
+    "nyc": {
+        "functions": 80,
+        "lines": 80,
+        "check-coverage": true,
+        "reporter": [
+            "text",
+            "html"
+        ],
+        "exclude": [
+            "tests/**"
+        ]
     },
     "repository": {
         "type": "git",
@@ -25,11 +41,15 @@
     },
     "homepage": "https://github.com/GiovaniBoff/js-tdd-course#readme",
     "devDependencies": {
+        "@babel/core": "^7.13.16",
+        "@babel/preset-env": "^7.13.15",
+        "@babel/register": "^7.13.16",
         "chai": "^4.3.4",
         "eslint": "^7.24.0",
         "eslint-config-airbnb-base": "^14.2.1",
         "eslint-plugin-import": "^2.22.1",
         "husky": "^6.0.0",
-        "mocha": "^8.3.2"
+        "mocha": "^8.3.2",
+        "nyc": "^15.1.0"
     }
 }

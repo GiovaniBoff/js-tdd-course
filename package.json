@@ -8,6 +8,8 @@
         "test": "mocha tests/**/*.spec.js --require @babel/register",
         "test:tdd": "mocha tests/**/*.spec.js --require @babel/register --watch",
         "test:coverage": "nyc npm run test",
+        "test": "mocha tests/**/*.spec.js --require @babel/register",
+        "test:tdd": "mocha tests/**/*.spec.js --require @babel/register --watch",
         "lint": "eslint src/*.js",
         "prepush": "npm run prepare"
     },
